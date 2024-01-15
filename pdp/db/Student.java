@@ -65,7 +65,8 @@ public class Student implements Repository<User> {
 
     @Override
     public void update(User user) {
-
+        user.setName(Input.inputStr("Enter name"));
+        System.out.println("User updated");
     }
 
     @Override
