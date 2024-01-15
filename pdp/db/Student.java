@@ -71,6 +71,7 @@ public class Student implements Repository<User> {
 
     @Override
     public void delete(User user) {
-
+        users.remove(user);
+        System.out.println("User  removed");
     }
 }
